@@ -49,66 +49,32 @@ TCP/IP es el modelo que usamos actualmente.
 ### ¿Por qué usamos TCP/IP en la web?
 
 TCP/IP se enfoca en la transmisión de datos de forma eficiente. Su uso en la web se debe a que es más práctico y está bien adaptado a los servicios de red modernos.
-3. **�� Las 4 capas del modelo TCP/IP (de forma sencilla)**
+## 3. 🏗️ Las 4 capas del modelo TCP/IP (de forma sencilla)
 
-   - Capa de Aplicación (HTTP, HTTPS, DNS, etc.)
-   - Capa de Transporte (TCP vs UDP)
-   - Capa de Internet (IP, direcciones IP, routing)
-   - Capa de Acceso a Red (Ethernet, Wi-Fi)
-   El modelo TCP/IP (también conocido como el modelo de Internet) está compuesto por 4 capas, cada una con funciones específicas en la transmisión de datos a través de redes. Estas capas son:
-1. Capa de Aplicación
+### Capa de Aplicación
+Protocolos que utilizan las aplicaciones para comunicarse:
+- HTTP
+- HTTPS
+- DNS
+- FTP
+- SMTP
 
-    Función: Proporciona servicios de red directamente a las aplicaciones del usuario.
+### Capa de Transporte
+Gestiona la transmisión de datos entre aplicaciones:
+- **TCP**: Transmisión confiable y ordenada
+- **UDP**: Transmisión rápida sin garantías
 
-    Protocolos comunes: HTTP, FTP, SMTP, DNS, POP3, IMAP.
-•	HTTP significa Hypertext Transfer Protocol (Protocolo de Transferencia de Hipertexto). Es un protocolo de nivel de aplicación que permite la comunicación entre clientes (normalmente navegadores web) y servidores web. Se utiliza principalmente para transmitir páginas web (HTML), imágenes, scripts y otros recursos.
-	
-•	FTP significa File Transfer Protocol (Protocolo de Transferencia de Archivos). Es un protocolo de la capa de aplicación diseñado para transferir archivos entre un cliente y un servidor a través de una red.
-	Funciones principales de FTP
-1.	Subir archivos del cliente al servidor
-2.	Descargar archivos del servidor al cliente
-3.	Crear, renombrar, mover o borrar archivos y carpetas en el servidor
-4.	Autenticación de usuario mediante nombre de usuario y contraseña
+### Capa de Internet
+Maneja el direccionamiento y enrutamiento de datos:
+- Protocolo IP
+- Direcciones IP
+- Routing (enrutamiento)
 
-•	HTTPS significa Hypertext Transfer Protocol Secure (Protocolo Seguro de Transferencia de Hipertexto). Es la versión segura de HTTP. Se utiliza principalmente para navegar de forma segura por la web.
-
-•	DNS significa Domain Name System (Sistema de Nombres de Dominio). Es un servicio de la capa de aplicación que traduce nombres de dominio (ej. www.google.com) en direcciones IP (ej. 142.250.190.4) que las computadoras pueden entender.
-Equivalente en OSI: Capas 5 (Sesión), 6 (Presentación) y 7 (Aplicación).
-
-2. Capa de Transporte
-    Función: Asegura la comunicación confiable entre dispositivos, control de flujo y corrección de errores.
-    Protocolos comunes:
-•	TCP (Transmission Control Protocol): Confiable, orientado a conexión.
-•	UDP (User Datagram Protocol): No confiable, sin conexión.
-Característica	TCP	UDP
-Tipo de conexión	Orientado a conexión	No orientado a conexión
-Fiabilidad	Confiable (garantiza entrega y orden)	No confiable
-Control de flujo	Sí	No
-Control de congestión	Sí	No
-Velocidad	Más lento	Más rápido
-Tamaño de cabecera	Más grande (20 bytes mínimo)	Más pequeña (8 bytes)
-Usos principales	Web, email, FTP	Streaming, juegos, DNS, VoIP
-
-    Equivalente en OSI: Capa 4 (Transporte).
-
-3. Capa de Internet
-    Función: Encargada del direccionamiento lógico, enrutamiento de paquetes y su entrega.
-Protocolos comunes: IP (IPv4/IPv6), ICMP, ARP.
-•	IP significa Internet Protocol (Protocolo de Internet).
-Es el protocolo principal de la Capa de Internet.
-Su función es encaminar los paquetes (datagramas) desde el origen hasta el destino a través de una o varias redes.
-Versiones principales
-🔸 IPv4:
-1.	Más usado actualmente.
-2.	Direcciones de 32 bits (4 bytes), ej.: 192.0.2.1
-3.	Tiene limitación de direcciones (unos 4 mil millones).
-🔸 IPv6:
-1.	Diseñado para reemplazar IPv4.
-2.	Direcciones de 128 bits, ej.: 2001:0db8::1
-3.	Prácticamente direcciones ilimitadas.
-
-•	
-  Equivalente en OSI: Capa 3 (Red).
+### Capa de Acceso a Red
+Gestiona la conexión física y el acceso al medio:
+- Ethernet (cables)
+- Wi-Fi (inalámbrico)
+- Bluetooth
 
 4. Capa de Acceso a la Red (o de Enlace)
  Función: Define cómo se transmiten los datos a través del hardware de red (como cables, switches, NICs).
@@ -223,18 +189,25 @@ Asigna direcciones IP a dispositivos de una red.
 **Ejemplos de uso:**
 - **Navegación web**: TCP garantiza que todas las partes de una página web se carguen correctamente
 - **Streaming**: UDP permite transmisión más rápida, aunque algunos datos puedan perderse ocasionalmente
-7. **�� Proceso básico de conexión en la web**
+##  7. 🌐 Proceso básico de conexión en la web
 
-   - De tu navegador a un servidor web: ¿qué ocurre paso a paso?
-   - Resolución DNS
-   - Establecimiento de conexión TCP (Handshake)
-   1.	Escribir la URL
-      El usuario escribe la dirección en el navegador
-   2.	Resolución DNS
-   El navegador necesita saber la dirección IP de www.ejemplo.com.
-   •	Busca en su caché local o en el sistema operativo si ya conoce la IP.
-   •  Si no la tiene, hace una consulta DNS (usando UDP puerto 53) a un servidor DNS.
-   •	El servidor DNS responde
+### ¿Qué ocurre paso a paso de tu navegador a un servidor web?
+
+El proceso incluye los siguientes elementos clave:
+- Resolución DNS
+- Establecimiento de conexión TCP (Handshake)
+
+### Pasos del proceso
+
+#### 1. Escribir la URL
+El usuario escribe la dirección en el navegador.
+
+#### 2. Resolución DNS
+El navegador necesita saber la dirección IP de www.ejemplo.com:
+
+- **Búsqueda en caché local**: Busca en su caché local o en el sistema operativo si ya conoce la IP
+- **Consulta DNS**: Si no la tiene, hace una consulta DNS (usando UDP puerto 53) a un servidor DNS
+- **Respuesta del servidor**: El servidor DNS responde con la dirección IP correspondiente
 
 
 # 8. 🔐 Seguridad y capa de transporte
