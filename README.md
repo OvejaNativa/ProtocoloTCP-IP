@@ -4,16 +4,31 @@ Este documento forma parte del módulo introductorio de redes en el bootcamp de 
 
 ---
 
-## �� Tabla de Contenidos
+# Protocolo TCP/IP
 
-1. **�� ¿Qué es el protocolo TCP/IP y por qué es importante?**
+## 📋 Tabla de Contenidos
 
-   - Breve historia y propósito: 
+1. **🌐 ¿Qué es el protocolo TCP/IP y por qué es importante?**
+   - Breve historia y propósito
    - Su rol en el funcionamiento de Internet
 
-Actualmente la mayoría de ordenadores están conectados a alguna red (internet, intranet, etc.) y casi todos lo hacen utilizando el modelo TCP/IP. Este modelo es un protocolo para comunicación en redes que permite que un equipo pueda comunicarse dentro de una red. El protocolo TCP/IP surgió de un proyecto de defensa llamado DARPA en 1969. En 1983 el nuevo conjunto de protocolos TCP/IP fue adoptado como estándar y finalmente se convirtió en el más usado en redes y el protocolo estándar de internet. El modelo TCP/IP permite un intercambio de datos fiable dentro de una red, definiendo los pasos a seguir desde que se envían los datos (en paquetes) hasta que son recibidos. Para lograrlo utiliza un sistema de capas con jerarquías (se construye una capa a continuación de la anterior) que se comunican únicamente con su capa superior (a la que envía resultados) y su capa inferior (a la que solicita servicios).
+---
 
+## 1. 🌐 ¿Qué es el protocolo TCP/IP y por qué es importante?
 
+### Breve historia y propósito
+
+Actualmente la mayoría de ordenadores están conectados a alguna red (internet, intranet, etc.) y casi todos lo hacen utilizando el modelo TCP/IP. Este modelo es un protocolo para comunicación en redes que permite que un equipo pueda comunicarse dentro de una red.
+
+El protocolo TCP/IP surgió de un proyecto de defensa llamado **DARPA** en 1969. En 1983 el nuevo conjunto de protocolos TCP/IP fue adoptado como estándar y finalmente se convirtió en el más usado en redes y el protocolo estándar de internet.
+
+### Su rol en el funcionamiento de Internet
+
+El modelo TCP/IP permite un intercambio de datos fiable dentro de una red, definiendo los pasos a seguir desde que se envían los datos (en paquetes) hasta que son recibidos.
+
+Para lograrlo utiliza un **sistema de capas con jerarquías** (se construye una capa a continuación de la anterior) que se comunican únicamente con:
+- Su **capa superior** (a la que envía resultados)
+- Su **capa inferior** (a la que solicita servicios)
 
 2. **��️ Modelo TCP/IP vs Modelo OSI** (CATA)
 
@@ -141,18 +156,35 @@ Una **dirección IP** (Internet Protocol) es un identificador único asignado a 
 - **IP privada:** Usada para identificar dispositivos dentro de una misma red local (como tu router, tu teléfono, etc.)
 
 
-5. **�� Puertos y Protocolos Comunes para Desarrolladores Web**
+---
 
-   - ¿Qué es un puerto? En informática, un puerto es una interfaz a través de la cual se pueden enviar y recibir los diferentes tipos de datos. En electrónica, telecomunicaciones y hardware, una interfaz es el puerto (circuito físico) a través del que se envían o reciben señales desde un sistema o subsistemas hacia otros.
+## 5. 🔌 Puertos y Protocolos Comunes para Desarrolladores Web
 
-   - Puertos típicos: 80 (HTTP), 443 (HTTPS), 22 (SSH), 3306 (MySQL)
-Puerto 80: Web (HTTP)
-Puerto 443: Web segura (HTTPS)
-Puerto 43: Sistema de nombres de dominio (DNS)
-Puerto 3389: Protocolo de escritorio remoto (RDP)
-Puerto 21: Protocolo de transferencia de archivos (FTP)
-Puerto 22: Comunicaciones seguras (SSH), un protocolo de túnel utilizado para crear conexiones de red seguras
-Puero 3306: MySQL usa este puerto por defecto
+### ¿Qué es un puerto?
+
+En informática, un puerto es una interfaz a través de la cual se pueden enviar y recibir los diferentes tipos de datos. En electrónica, telecomunicaciones y hardware, una interfaz es el puerto (circuito físico) a través del que se envían o reciben señales desde un sistema o subsistemas hacia otros.
+
+### Puertos más utilizados en desarrollo web
+
+| Puerto | Protocolo | Descripción |
+|--------|-----------|-------------|
+| **80** | HTTP | Navegación web estándar |
+| **443** | HTTPS | Navegación web segura (SSL/TLS) |
+| **22** | SSH | Comunicaciones seguras y túneles |
+| **21** | FTP | Transferencia de archivos |
+| **53** | DNS | Sistema de nombres de dominio |
+| **3306** | MySQL | Base de datos MySQL (puerto por defecto) |
+| **3389** | RDP | Protocolo de escritorio remoto |
+
+### Detalles importantes
+
+- **Puerto 80 (HTTP)**: El puerto estándar para tráfico web no seguro
+- **Puerto 443 (HTTPS)**: Versión segura del HTTP con encriptación SSL/TLS
+- **Puerto 22 (SSH)**: Protocolo fundamental para administración segura de servidores
+- **Puerto 21 (FTP)**: Transferencia de archivos, aunque menos usado por seguridad
+- **Puerto 53 (DNS)**: Traducción de nombres de dominio a direcciones IP
+- **Puerto 3306 (MySQL)**: Puerto por defecto para conexiones a bases de datos MySQL
+- **Puerto 3389 (RDP)**: Acceso remoto a sistemas Windows
 
 
 6. **��️ Protocolos clave en el día a día web** (CATA)
