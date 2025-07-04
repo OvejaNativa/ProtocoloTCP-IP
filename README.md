@@ -246,7 +246,7 @@ Pasar de **HTTP** a **HTTPS** implica una transformación radical en términos d
 | **curl** | Envía solicitudes HTTP(S) y muestra la respuesta | `curl -I https://healthmood.cl` | Ver cabeceras, estado de HTTPS o probar APIs |
 | **telnet** | Prueba conectividad con un puerto específico | `telnet healthmood.cl 443` | Ver si un servicio está activo y escucha correctamente |
 
-## 📘 Glosario Esencial de Redes
+## 10. 📘 Glosario Esencial de Redes
 
 | Término | Definición breve |
 |---------|------------------|
