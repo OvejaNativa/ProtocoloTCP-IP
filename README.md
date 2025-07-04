@@ -28,6 +28,70 @@ TCP/IP se enfoca en la transmisión de datos de forma eficiente. Su uso en web e
    - Capa de Transporte (TCP vs UDP)
    - Capa de Internet (IP, direcciones IP, routing)
    - Capa de Acceso a Red (Ethernet, Wi-Fi)
+   El modelo TCP/IP (también conocido como el modelo de Internet) está compuesto por 4 capas, cada una con funciones específicas en la transmisión de datos a través de redes. Estas capas son:
+1. Capa de Aplicación
+
+    Función: Proporciona servicios de red directamente a las aplicaciones del usuario.
+
+    Protocolos comunes: HTTP, FTP, SMTP, DNS, POP3, IMAP.
+•	HTTP significa Hypertext Transfer Protocol (Protocolo de Transferencia de Hipertexto). Es un protocolo de nivel de aplicación que permite la comunicación entre clientes (normalmente navegadores web) y servidores web. Se utiliza principalmente para transmitir páginas web (HTML), imágenes, scripts y otros recursos.
+	
+•	FTP significa File Transfer Protocol (Protocolo de Transferencia de Archivos). Es un protocolo de la capa de aplicación diseñado para transferir archivos entre un cliente y un servidor a través de una red.
+	Funciones principales de FTP
+1.	Subir archivos del cliente al servidor
+2.	Descargar archivos del servidor al cliente
+3.	Crear, renombrar, mover o borrar archivos y carpetas en el servidor
+4.	Autenticación de usuario mediante nombre de usuario y contraseña
+
+•	HTTPS significa Hypertext Transfer Protocol Secure (Protocolo Seguro de Transferencia de Hipertexto). Es la versión segura de HTTP. Se utiliza principalmente para navegar de forma segura por la web.
+
+•	DNS significa Domain Name System (Sistema de Nombres de Dominio). Es un servicio de la capa de aplicación que traduce nombres de dominio (ej. www.google.com) en direcciones IP (ej. 142.250.190.4) que las computadoras pueden entender.
+Equivalente en OSI: Capas 5 (Sesión), 6 (Presentación) y 7 (Aplicación).
+
+2. Capa de Transporte
+    Función: Asegura la comunicación confiable entre dispositivos, control de flujo y corrección de errores.
+    Protocolos comunes:
+•	TCP (Transmission Control Protocol): Confiable, orientado a conexión.
+•	UDP (User Datagram Protocol): No confiable, sin conexión.
+Característica	TCP	UDP
+Tipo de conexión	Orientado a conexión	No orientado a conexión
+Fiabilidad	Confiable (garantiza entrega y orden)	No confiable
+Control de flujo	Sí	No
+Control de congestión	Sí	No
+Velocidad	Más lento	Más rápido
+Tamaño de cabecera	Más grande (20 bytes mínimo)	Más pequeña (8 bytes)
+Usos principales	Web, email, FTP	Streaming, juegos, DNS, VoIP
+
+    Equivalente en OSI: Capa 4 (Transporte).
+
+3. Capa de Internet
+    Función: Encargada del direccionamiento lógico, enrutamiento de paquetes y su entrega.
+Protocolos comunes: IP (IPv4/IPv6), ICMP, ARP.
+•	IP significa Internet Protocol (Protocolo de Internet).
+Es el protocolo principal de la Capa de Internet.
+Su función es encaminar los paquetes (datagramas) desde el origen hasta el destino a través de una o varias redes.
+Versiones principales
+🔸 IPv4:
+1.	Más usado actualmente.
+2.	Direcciones de 32 bits (4 bytes), ej.: 192.0.2.1
+3.	Tiene limitación de direcciones (unos 4 mil millones).
+🔸 IPv6:
+1.	Diseñado para reemplazar IPv4.
+2.	Direcciones de 128 bits, ej.: 2001:0db8::1
+3.	Prácticamente direcciones ilimitadas.
+
+•	
+  Equivalente en OSI: Capa 3 (Red).
+
+4. Capa de Acceso a la Red (o de Enlace)
+ Función: Define cómo se transmiten los datos a través del hardware de red (como cables, switches, NICs).
+Protocolos comunes: Ethernet, Wi-Fi, PPP, ARP (también puede estar aquí).
+Ethernet es una tecnología de red de área local (LAN).
+Es uno de los protocolos más usados en la Capa de Acceso a Red (también llamada Capa de Enlace).
+Define cómo se transmiten los datos a través del medio físico (cable UTP, fibra óptica, etc.).
+Wi-Fi es una tecnología de red inalámbrica basada en el estándar IEEE 802.11.
+Permite la transmisión de datos por ondas de radio, eliminando la necesidad de cables físicos.
+Equivalente en OSI: Capas 1 (Física) y 2 (Enlace de datos).
 
 4. **�� Direccionamiento IP: IPv4 vs IPv6**
 
