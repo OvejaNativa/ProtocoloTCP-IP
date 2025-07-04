@@ -14,7 +14,6 @@ Este documento forma parte del **módulo introductorio de redes** en el bootcamp
 # Protocolo TCP/IP
 
 ## 📋 Tabla de Contenidos
-1. 🌐 ¿Qué es el protocolo TCP/IP y por qué es importante?
 
 ---
 
