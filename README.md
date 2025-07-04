@@ -1,16 +1,20 @@
-# �� Conceptos Básicos del Protocolo TCP/IP
+# 🌐 Conceptos Básicos del Protocolo TCP/IP
 
-Este documento forma parte del módulo introductorio de redes en el bootcamp de desarrollo web. Estos son los fundamentos esenciales del protocolo TCP/IP, necesario para entender cómo viajan los datos por Internet y cómo funcionan los servicios web.
+---
+
+## 📚 Introducción al Módulo
+
+Este documento forma parte del **módulo introductorio de redes** en el bootcamp de desarrollo web. Estos son los fundamentos esenciales del protocolo TCP/IP, necesario para entender cómo viajan los datos por Internet y cómo funcionan los servicios web.
+
+---
+💡 Nota: Este es el punto de partida para comprender las tecnologías de red que utilizarás como desarrollador web.
 
 ---
 
 # Protocolo TCP/IP
 
 ## 📋 Tabla de Contenidos
-
-1. **🌐 ¿Qué es el protocolo TCP/IP y por qué es importante?**
-   - Breve historia y propósito
-   - Su rol en el funcionamiento de Internet
+1. 🌐 ¿Qué es el protocolo TCP/IP y por qué es importante?
 
 ---
 
