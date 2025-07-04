@@ -34,13 +34,21 @@ Para lograrlo utiliza un **sistema de capas con jerarquías** (se construye una 
 - Su **capa superior** (a la que envía resultados)
 - Su **capa inferior** (a la que solicita servicios)
 
-2. **��️ Modelo TCP/IP vs Modelo OSI** (CATA)
+## 2. 🌐 Modelo TCP/IP vs Modelo OSI
 
-   - Comparación de capas 
-Modelo OSI (Open System Interconnection) tiene 7 capas, mientras que Modelo TCP/IP tiene 4 (aplicación, transporte, acceso a red, internet). TCP/IP es el que usamos.
-   - ¿Por qué usamos TCP/IP en la web?
-TCP/IP se enfoca en la transmisión de datos de forma eficiente. Su uso en web es debido a ser más práctico, a su vez bien adaptado a servicios de red modernos.
+### Comparación de capas
 
+El **Modelo OSI** (Open System Interconnection) tiene 7 capas, mientras que el **Modelo TCP/IP** tiene 4 capas:
+- Aplicación
+- Transporte
+- Acceso a red
+- Internet
+
+TCP/IP es el modelo que usamos actualmente.
+
+### ¿Por qué usamos TCP/IP en la web?
+
+TCP/IP se enfoca en la transmisión de datos de forma eficiente. Su uso en la web se debe a que es más práctico y está bien adaptado a los servicios de red modernos.
 3. **�� Las 4 capas del modelo TCP/IP (de forma sencilla)**
 
    - Capa de Aplicación (HTTP, HTTPS, DNS, etc.)
@@ -191,13 +199,30 @@ En informática, un puerto es una interfaz a través de la cual se pueden enviar
 - **Puerto 3389 (RDP)**: Acceso remoto a sistemas Windows
 
 
-6. **��️ Protocolos clave en el día a día web** (CATA)
+## 6. 🌐 Protocolos clave en el día a día web
 
-   - HTTP/HTTPS: Usado para navegar sitios web. HTTPS: versión segura.
-   - DNS: Traduce nombres a direcciones IP.
-   - DHCP: Asigna direcciones IP a dispositivos de una red.
-   - TCP vs UDP (con ejemplos como streaming vs navegación): TCP usado para navegación web y correos; UDP usado para streaming y videojuegos (prioriza velocidad).
+### HTTP/HTTPS
+Usado para navegar sitios web. HTTPS es la versión segura de HTTP.
 
+### DNS
+Traduce nombres de dominio a direcciones IP.
+
+### DHCP
+Asigna direcciones IP a dispositivos de una red.
+
+### TCP vs UDP
+
+#### TCP (Transmission Control Protocol)
+- Usado para navegación web y correos electrónicos
+- Prioriza la confiabilidad y integridad de los datos
+
+#### UDP (User Datagram Protocol)
+- Usado para streaming y videojuegos
+- Prioriza la velocidad sobre la confiabilidad
+
+**Ejemplos de uso:**
+- **Navegación web**: TCP garantiza que todas las partes de una página web se carguen correctamente
+- **Streaming**: UDP permite transmisión más rápida, aunque algunos datos puedan perderse ocasionalmente
 7. **�� Proceso básico de conexión en la web**
 
    - De tu navegador a un servidor web: ¿qué ocurre paso a paso?
