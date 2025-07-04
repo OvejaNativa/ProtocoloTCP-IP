@@ -179,6 +179,14 @@ Puero 3306: MySQL usa este puerto por defecto
    - De tu navegador a un servidor web: ¿qué ocurre paso a paso?
    - Resolución DNS
    - Establecimiento de conexión TCP (Handshake)
+   1.	Escribir la URL
+      El usuario escribe la dirección en el navegador
+   2.	Resolución DNS
+   El navegador necesita saber la dirección IP de www.ejemplo.com.
+   •	Busca en su caché local o en el sistema operativo si ya conoce la IP.
+   •  Si no la tiene, hace una consulta DNS (usando UDP puerto 53) a un servidor DNS.
+   •	El servidor DNS responde
+
 
 8. **�� Seguridad y capa de transporte**
 
